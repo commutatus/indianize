@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'indianize'
-  s.version     = '1.1'
+  s.version     = '1.0'
   s.licenses    = ['MIT']
   s.summary     = "Convert numbers to Indian currency numbering system."
   s.description = "Convert numbers to Indian currency numbering system with seperators, in numeric and alphabetical formats."
