@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Himanshu G."]
   s.email       = 'cephalus.mail@gmail.com'
   s.files       = ["lib/indianize.rb"]
-  s.homepage    = 'https://www.github.com/tambakoo/indianize'
-  s.metadata    = { "source_code_uri" => "https://www.github.com/tambakoo/indianize" }
+  s.homepage    = 'https://github.com/commutatus/indianize'
+  s.metadata    = { "source_code_uri" => "https://github.com/commutatus/indianize" }
 end
