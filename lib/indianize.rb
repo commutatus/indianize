@@ -35,20 +35,20 @@ class Indianize
       }
 
   def self.to_number(money)
-    "₹ " + money.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,")
+    "₹ " + value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,")
   end
 
   def self.to_words(money)
-    money = money.round
+    value = value.round
   	$reference_hash.each do |number, word|
-  		return "please don't enter negative money value" if money < 0
-  		return "" if money == 0 
-  		if money.to_s.length == 1 && money/number > 0
+  		return "please don't enter negative money value" if value < 0
+  		return "" if value == 0 
+  		if value.to_s.length == 1 && value/number > 0
   			return ("#{word}").capitalize.strip      
-  		elsif money < 100 && money/number > 0
-  			return ("#{word} " + to_words(money%number)).capitalize.strip
-  		elsif money/number > 0
-  			return (to_words(money/number) + " #{word} " + to_words(money%number)).capitalize.strip
+  		elsif value < 100 && value/number > 0
+  			return ("#{word} " + to_words(value%number)).capitalize.strip
+  		elsif value/number > 0
+  			return (to_words(value/number) + " #{word} " + to_words(value%number)).capitalize.strip
   		end
   	end
   end
