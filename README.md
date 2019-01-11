@@ -7,6 +7,13 @@ Indianize.to_number(651427)
 => "₹ 6,51,427"
 ```
 
+Convert a number into String with comma seperator.
+
+```bash
+Indianize.to_number_without_symbol(651427)
+=> "6,51,427"
+```
+
 Convert a number into Indian currencies as words like Ten, Hundred, Thousand, Lakh, Crore and so on.
 
 ```bash
