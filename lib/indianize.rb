@@ -38,6 +38,10 @@ class Indianize
     "₹ " + value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,")
   end
 
+  def self.to_number_without_symbol(value)
+   value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,") 
+  end
+
   def self.to_words(value)
     value = value.round
   	$reference_hash.each do |number, word|
