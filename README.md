@@ -35,6 +35,18 @@ Indianize.to_words(651448736594234928374340293409234822738334)
 ```
 
 ### States
+
+Generate a list of all Indian states and uts. 
+```
+Indianize.states
+```
+
+Search within the list of states and uts. 
+```
+Indianize.state_search('utt')
+=> ["Uttar Pradesh", "Uttarakhand"]
+```
+
 ## Installation
 
 ### Install the gem using RubyGems
