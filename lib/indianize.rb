@@ -34,6 +34,14 @@ class Indianize
       1 => "one"
       }
 
+  @states_array = ["Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", 
+                  "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman & Diu", 
+                  "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", 
+                  "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", 
+                  "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", 
+                  "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", 
+                  "Uttarakhand", "West Bengal"]
+
   def self.to_number(value)
     "₹ " + value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,")
   end
@@ -56,4 +64,18 @@ class Indianize
   		end
   	end
   end
+
+  # states
+  def self.states
+    @states_array
+  end
+
+  def self.state_search(query)
+    result = []
+    @states_array.each do |x|
+      result << x if x.downcase.include?(query)
+    end
+    return result
+  end
+
 end
