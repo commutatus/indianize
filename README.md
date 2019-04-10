@@ -1,5 +1,7 @@
 # Indianize
 
+### Currency
+
 Convert a number into String with Indian currency symbol with comma seperator.
 
 ```bash
@@ -32,7 +34,8 @@ Indianize.to_words(651448736594234928374340293409234822738334)
 => "Sixty five lakh fourteen thousand four hundred eighty seven crore thirty six lakh fifty nine thousand four hundred twenty three crore forty nine lakh twenty eight thousand three hundred seventy four crore thirty four lakh two thousand nine hundred thirty four crore nine lakh twenty three thousand four hundred eighty two crore twenty seven lakh thirty eight thousand three hundred thirty four"`
 ```
 
-## Usage
+### States
+## Installation
 
 ### Install the gem using RubyGems
 
