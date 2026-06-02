@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'indianize'
-  s.version     = '1.4'
+  s.version     = '1.5'
   s.licenses    = ['MIT']
   s.summary     = "Convert numbers to Indian currency numbering system."
   s.description = "Convert numbers to Indian currency numbering system with seperators, in numeric and alphabetical formats."
@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.files       = ["lib/indianize.rb"]
   s.homepage    = 'https://github.com/commutatus/indianize'
   s.metadata    = { "source_code_uri" => "https://github.com/commutatus/indianize" }
+  s.add_development_dependency "rspec", "~> 3.0"
+  s.required_ruby_version = ">= 2.5.0"
 end
