@@ -19,7 +19,7 @@ class Indianize
         16=>"sixteen",
         15=>"fifteen",
         14=>"fourteen",
-        13=>"thirteen",              
+        13=>"thirteen",           
         12=>"twelve",
         11 => "eleven",
         10 => "ten",
@@ -47,7 +47,7 @@ class Indianize
   end
 
   def self.to_number_without_symbol(value)
-    value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,") 
+    value.round.to_s.gsub(/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/, "\\1,")
   end
 
   def self.to_words(value)
