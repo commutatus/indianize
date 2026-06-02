@@ -19,7 +19,7 @@ class Indianize
         16=>"sixteen",
         15=>"fifteen",
         14=>"fourteen",
-        13=>"thirteen",           
+        13=>"thirteen",
         12=>"twelve",
         11 => "eleven",
         10 => "ten",
@@ -68,7 +68,7 @@ class Indianize
 
     REFERENCE_HASH.each do |number, word|
       if value.to_s.length == 1 && value/number > 0
-        return ("#{word}").capitalize.strip      
+        return ("#{word}").capitalize.strip
       elsif value < 100 && value/number > 0
         return ("#{word} " + convert_to_words(value%number)).capitalize.strip
       elsif value/number > 0
